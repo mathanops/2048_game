@@ -16,7 +16,7 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 COPY . /app
 
 # Expose port 3001 for the NGINX web server
-EXPOSE 3001
+EXPOSE 80
 
 # Start NGINX and your 'js' application
 CMD ["nginx", "-g", "daemon off;", "-c", "/etc/nginx/nginx.conf"]
