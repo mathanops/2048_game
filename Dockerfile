@@ -8,4 +8,4 @@ RUN echo "daemon off;" >>/etc/nginx/nginx.conf
 
 COPY . ./ 
 EXPOSE 3001
-CMD ["nginx","start"]
+CMD ["nginx"]
