@@ -11,8 +11,6 @@ RUN apt-get update && \
 # Configure NGINX to run in the foreground
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
-# Copy the 'js' folder from your local directory into the container's '/app'
-COPY js /app/js
 
 # Copy the remaining files from your local directory into the container's '/app'
 COPY . /app
