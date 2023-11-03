@@ -8,4 +8,5 @@ RUN echo "daemon off;" >>/etc/nginx/nginx.conf
 
 COPY js ./
 COPY . ./
+EXPOSE 3001
 CMD ["nginx","js"]
