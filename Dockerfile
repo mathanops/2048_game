@@ -19,4 +19,4 @@ COPY . /app
 EXPOSE 80
 
 # Start NGINX and your 'js' application
-CMD ["nginx", "-g", "daemon off;", "-c", "/etc/nginx/nginx.conf"]
+CMD ["./app"]
