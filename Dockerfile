@@ -19,4 +19,4 @@ COPY . /app
 EXPOSE 80
 
 # Start NGINX and your 'js' application
-CMD ["./app"]
+CMD ["nginx","./app"]
